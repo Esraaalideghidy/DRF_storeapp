@@ -21,7 +21,7 @@ from django.conf import settings
 import stripe
 
 
-stripe.api_key = settings.STRIPE_SECERET_KEY
+stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 def initiate_payment(amount, email, order_id):
